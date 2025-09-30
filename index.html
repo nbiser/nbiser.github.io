@@ -2,17 +2,85 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nathan Biser | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+    header { background: #222; color: #fff; padding: 2rem 1rem; text-align: center; }
+    header h1 { margin: 0; font-size: 2.5rem; }
+    header p { font-size: 1.2rem; color: #ccc; }
+    nav { margin-top: 1rem; }
+    nav a { color: #fff; text-decoration: none; margin: 0 10px; }
+    section { padding: 2rem 1rem; max-width: 900px; margin: auto; }
+    h2 { color: #222; margin-bottom: 1rem; }
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+    .card { background: #f4f4f4; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    footer { background: #222; color: #fff; text-align: center; padding: 1rem; margin-top: 2rem; }
+  </style>
 </head>
 <body>
-  <h1>Hello, I’m Nathan</h1>
-  <p>Welcome to my portfolio!</p>
-  <nav>
-    <a href="projects.html">Projects</a> |
-    <a href="about.html">About Me</a> |
-    <a href="contact.html">Contact</a>
-  </nav>
+
+  <header>
+    <h1>Nathan Biser</h1>
+    <p>Sales & Digital Marketing Professional | E-Commerce Specialist | Heavy Equipment Industry</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a marketing and sales professional with 8+ years of experience in retail, automotive, and heavy equipment industries. 
+      I specialize in bridging sales strategy with digital execution — from managing e-commerce platforms and ad campaigns to 
+      building customer trust and delivering measurable results. 
+    </p>
+    <p>
+      Most recently, I’ve grown <strong>SkidSteerCabs.com</strong> through Shopify optimization, Google Ads, Facebook marketing, and inbound sales. 
+      I enjoy research, problem-solving, and applying creative strategies that convert leads into long-term partners.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Highlighted Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>SkidSteerCabs.com</h3>
+        <p>Led sales and marketing for a heavy-equipment parts company. Managed inbound/outbound sales, launched new product lines, 
+        and scaled e-commerce presence with SEO-driven content and ad campaigns.</p>
+        <a href="https://www.skidsteercabs.com" target="_blank">View Site</a>
+      </div>
+      <div class="card">
+        <h3>Amplify Local</h3>
+        <p>Co-founded a digital marketing venture helping contractors generate leads through websites, CRMs, and ad management. 
+        Built sales materials, packages, and strategy for scalable growth.</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="card">
+        <h3>Portfolio Expansion</h3>
+        <p>Developing case studies in SEO, e-commerce optimization, and sales operations to showcase measurable outcomes across multiple industries.</p>
+        <a href="projects.html">See More</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>If you’d like to collaborate, hire me, or learn more, feel free to reach out:</p>
+    <ul>
+      <li>Email: <a href="mailto:nbiser@outlook.com">nbiser@outlook.com</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/nathan-biser-072a6a19b/" target="_blank">linkedin.com/in/nathan-biser</a></li>
+      <li>GitHub: <a href="https://github.com/username" target="_blank">github.com/username</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Nathan Biser | Built with GitHub Pages</p>
+  </footer>
+
 </body>
 </html>
 
