@@ -1,9 +1,45 @@
 /* General reset */
+:root {
+  --gold: #b9994d;
+  --charcoal: #0d0e0a;
+  --light: #f4f4f4;
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+header {
+  background: var(--charcoal);
+  color: var(--gold);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: var(--gold);
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
 
 /* Body styling */
 body {
