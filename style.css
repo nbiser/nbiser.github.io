@@ -154,7 +154,7 @@ footer {
 .t-title { margin: 0 0 .25rem 0; font-size: clamp(1.1rem, 1vw + 1rem, 1.6rem); }
 .t-sub { margin: 0 0 .75rem 0; color: #777; font-size: .95rem; }
 
-/* Horizontal scroll like your certs */
+/* Horizontal scroll like certs */
 .t-row {
   display: grid;
   grid-auto-flow: column;
