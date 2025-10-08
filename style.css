@@ -152,7 +152,7 @@ footer {
 <!-- Tiny JS lightbox (no external libs required) -->
 <script>
   (function(){
-    const row = document.querySelector('#certs .certs-row');
+    const row = document.querySelector('.certs-row');
     if (!row) return;
 
     // Build a basic lightbox container once
