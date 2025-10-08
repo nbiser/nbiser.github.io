@@ -102,51 +102,6 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
 }
-<script>
-  (function(){
-    const init = () => {
-      const row = document.querySelector('.certs-row');
-      if (!row) return;
-
-      // Build a basic lightbox container once
-      const overlay = document.createElement('div');
-      overlay.style.cssText = "position:fixed;inset:0;background:rgba(0,0,0,.85);display:none;align-items:center;justify-content:center;z-index:9999;";
-      overlay.innerHTML = `
-        <div style="position:relative;max-width:92vw;max-height:86vh;">
-          <button id="certsClose" aria-label="Close" style="position:absolute;top:-42px;right:-6px;width:36px;height:36px;border-radius:999px;border:1px solid rgba(255,255,255,.35);background:#111;color:#fff;font-size:18px;cursor:pointer">×</button>
-          <img id="certsFull" alt="Certificate" style="max-width:92vw;max-height:86vh;border-radius:10px;display:block" />
-          <div id="certsCap" style="color:#fff;opacity:.9;margin-top:8px;font-size:.95rem;text-align:center"></div>
-        </div>`;
-      document.body.appendChild(overlay);
-
-      const full = overlay.querySelector('#certsFull');
-      const cap = overlay.querySelector('#certsCap');
-      const closeBtn = overlay.querySelector('#certsClose');
-
-      row.addEventListener('click', (e) => {
-        const img = e.target.closest('.certs-thumb');
-        if (!img) return;
-        const card = img.closest('.certs-card');
-        const name = card.querySelector('.certs-name')?.textContent || '';
-        const issuer = card.querySelector('.certs-issuer')?.textContent || '';
-        full.src = img.src; // Option B: use the same file
-        cap.textContent = issuer ? `${name} · ${issuer}` : name;
-        overlay.style.display = 'flex';
-      });
-
-      const close = () => overlay.style.display = 'none';
-      closeBtn.addEventListener('click', close);
-      overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
-      document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && overlay.style.display === 'flex') close(); });
-    };
-
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', init);
-    } else {
-      init();
-    }
-  })();
-</script>
 
 
 <!--Certification Section Styling -->
