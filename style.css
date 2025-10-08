@@ -114,7 +114,7 @@ footer {
   .certs-row {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 170px;
+    grid-auto-columns: 240px;
     gap: 12px;
     overflow-x: auto;
     padding: 10px;
@@ -146,7 +146,7 @@ footer {
   .certs-name { font-size: .93rem; }
   .certs-issuer { font-size: .8rem; color: #6b6b6b; }
 
-  @media (max-width: 520px) { .certs-row { grid-auto-columns: 140px; } }
+  @media (max-width: 520px) { .certs-row { grid-auto-columns: 180px; } }
 </style>
 
 <!-- Tiny JS lightbox (no external libs required) -->
