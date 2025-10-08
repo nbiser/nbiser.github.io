@@ -176,7 +176,7 @@ footer {
       const card = img.closest('.certs-card');
       const name = card.querySelector('.certs-name')?.textContent || '';
       const issuer = card.querySelector('.certs-issuer')?.textContent || '';
-      full.src = img.dataset.full || img.src;
+      full.src = img.src;
       cap.textContent = issuer ? `${name} · ${issuer}` : name;
       overlay.style.display = 'flex';
     });
