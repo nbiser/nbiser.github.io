@@ -1,48 +1,76 @@
 <!DOCTYPE html>
-<html lang="English">
-<link rel="stylesheet" href="style.css?v=3.2.2">
-<header>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nathan Biser — Sales Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css?v=3.2.2">
+</head>
+
+<body>
+  <header class="site-header">
     <h1>Nathan Biser's Portfolio</h1>
-    <p>Sales & Digital Marketing Professional & E-Commerce Specialist specializing the Automotive and Heavy Equipment Industries</p>
-    <nav>
+    <p>Sales & Digital Marketing Professional • E-commerce Specialist for Automotive & Heavy Equipment</p>
+    <nav aria-label="Primary">
       <a href="index.html">Home</a>
       <a href="https://www.linkedin.com/in/nathan-biser-072a6a19b/">LinkedIn</a>
     </nav>
   </header>
 
-<head>
-	<meta charset="UTF-8" />
-	<title>Sales Portfolio</title>
-</head>
-<body>
-<div>
-<section class="sales-summary" aria-labelledby="ssc-sales-title">
-  <h2 id="ssc-sales-title">Impact of Taking Ownership of Sales at SSC</h2>
+  <main>
+    <!-- SSC Impact -->
+    <section class="sales-summary" aria-labelledby="ssc-sales-title">
+      <h2 id="ssc-sales-title">Impact After I Took Over Sales at SSC</h2>
 
-  <figure class="sales-chart">
-    <img width="575" height="400" src="Photo Assets/databeforeafter.png" alt="Summary of improvements made to SSC">
-    <figcaption>This figure shows how I improved the performance of SSC when I took full ownership of sales. Data is from aprox 2016-2025, pulled from Shopify CSV export.</figcaption>
-  </figure> 
-  
-</div>
-	
-<div>
-<section class="other-accomplishments" aria-labelledby="other-accomplishments">
-  <h2 id="other-accomplishments">Sales Processes & Impact on Quotes</h2></div>
-  
-  <figure class="sales-chart">
-    <img width="575" height="400" src="Photo Assets/QuoteStats.png" alt="Chart Showing Converted Quoted Count, Avg Quote Value, and close Rate.">
-    <figcaption>CR percent reflects average closing rate..</figcaption>
-  </figure>
-<h3>Established Sales Processes</h3>
-<p>When I took ownership of sales at SSC there was no formal sales process...no follow ups, no pipeline, and little automation. I quickly set up a pipeline
-in Highlevel CRM, and set up an effective but simple sales process to fully capture leads. I also helped set up our automated follow up system, from abandoned
-checkout emails, texts to cold leads, and checkins with customers who had already purchased.</p>
+      <p class="lede">
+        When I stepped in to fully own sales, I focused on tightening the process, building a real pipeline,
+        and making follow-up effortless. The result: healthier revenue, more orders, and stronger per-order value.
+      </p>
 
-<h3>Set Up New Partners</h3>
-<p>I spearheaded setting up new partnerships with numerous suppliers, including attachment manufacturers Eterra, Digga, and Haugen, along with the Heavy Equipment 
-parts suppliers AMS Parts and Depco. This required a large website effort to add and optimize the new products, learning about the mechanical specifications, and selling
-the new products to customers. I tackled the challenge, and those various distributors now form a major part of SSCs business.</p>
-</div>
+      <div class="results-grid">
+        <article class="result-card">
+          <h3 class="result-title">Results at a Glance</h3>
+          <ul class="result-list">
+            <li><strong>Avg monthly revenue:</strong> <span>$24,594 → $77,293</span> (<em>+214%</em>)</li>
+            <li><strong>Avg monthly orders:</strong> <span>31 → 83</span> (<em>+165%</em>)</li>
+            <li><strong>AOV:</strong> <span>$788 → $935</span></li>
+            <li><strong>Median order value:</strong> <span>$131 → $305</span></li>
+          </ul>
+          <p class="result-footnote">
+            Source: Shopify export (approx. 2016–2025). Monthly rollups; takeover date 11-01-2021.
+          </p>
+        </article>
+
+        <figure class="sales-chart">
+          <img width="575" height="400" src="Photo Assets/databeforeafter.png" alt="Before vs After summary of SSC sales metrics">
+          <figcaption>Before vs After summary of key SSC sales metrics following my ownership of sales.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Process & Quotes -->
+    <section class="other-accomplishments" aria-labelledby="sales-process-title">
+      <h2 id="sales-process-title">Sales Process & Quote Performance</h2>
+
+      <figure class="sales-chart">
+        <img width="575" height="400" src="Photo Assets/QuoteStats.png" alt="Converted quote count, average quote value, and close rate">
+        <figcaption>Converted quote count, average quote value, and close rate (CR%).</figcaption>
+      </figure>
+
+      <h3>What I Put in Place</h3>
+      <ul class="bulleted">
+        <li><strong>Real pipeline, real follow-up:</strong> moved from “no process” to a clear HighLevel CRM pipeline, with stages, tasks, and next steps.</li>
+        <li><strong>Automations that nudge, not nag:</strong> abandoned checkout emails, revive-the-lead texts, and post-purchase check-ins—simple, effective, and measurable.</li>
+        <li><strong>Faster quoting & cleaner handoffs:</strong> templates and playbooks to shrink response times and keep quotes moving.</li>
+      </ul>
+
+      <h3>New Supplier Partnerships</h3>
+      <p>
+        I led partnerships with attachment brands like <strong>Eterra</strong>, <strong>Digga</strong>, and <strong>Haugen</strong>, and parts suppliers like
+        <strong>AMS Parts</strong> and <strong>Depco</strong>. That meant building and optimizing new product pages, learning the specs,
+        and selling them effectively. Those lines now make up a meaningful slice of SSC’s business.
+      </p>
+    </section>
+  </main>
 </body>
 </html>
