@@ -199,8 +199,16 @@ footer {
 @media (max-width: 560px) {
   .t-row { grid-auto-columns: 260px; }
 }
+/* Fix alignment for certs and testimonials */
+.certs-section,
+.t-section {
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
+  padding: 2rem 1rem;
+}
 
-/*Sales States Site CSS*/
+
+/*Sales States Site CSS-Commented Out, Currently Unneeded*/
 
 /*#other-accomplishments { padding: 1.25rem; border-radius: .5rem; background:#fff; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
 #other-accomplishments h2 { font-size: 1.25rem; margin-bottom:.5rem; }
