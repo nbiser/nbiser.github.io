@@ -206,6 +206,58 @@ footer {
   margin: 0 auto 2rem auto;
   padding: 2rem 1rem;
 }
+/*Resume Download Bar Formatting*/
+.resume-bar {
+  background-color: #e0e0e0; /* light gray bar */
+  color: var(--charcoal);
+  text-align: center;
+  padding: 3rem 1rem;
+  margin-top: 3rem;
+}
+
+.resume-container h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.resume-container p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.resume-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.view-btn {
+  background-color: var(--charcoal);
+  color: var(--light);
+}
+
+.view-btn:hover {
+  background-color: #333;
+}
+
+.download-btn {
+  background-color: var(--gold);
+  color: var(--charcoal);
+}
+
+.download-btn:hover {
+  background-color: #a98a3d;
+}
 
 
 /*Sales States Site CSS-Commented Out, Currently Unneeded*/
