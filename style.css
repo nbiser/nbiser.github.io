@@ -208,7 +208,7 @@ footer {
 }
 /*Resume Download Bar Formatting*/
 .resume-bar {
-  background-color: #e0e0e0; /* light gray bar */
+  background-color: #e0e0e0; /* subtle light gray bar */
   color: var(--charcoal);
   text-align: center;
   padding: 3rem 1rem;
@@ -216,8 +216,8 @@ footer {
 }
 
 .resume-container h2 {
-  margin-bottom: 0.5rem;
   font-size: 1.8rem;
+  margin-bottom: 0.5rem;
 }
 
 .resume-container p {
@@ -228,35 +228,26 @@ footer {
 .resume-buttons {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1rem;
   flex-wrap: wrap;
 }
 
-.btn {
+.outline-btn {
   display: inline-block;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
+  border: 1.5px solid var(--gold);
+  color: var(--charcoal);
+  background-color: transparent;
   text-decoration: none;
-  font-weight: bold;
-  transition: all 0.2s ease-in-out;
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.25s ease;
 }
 
-.view-btn {
-  background-color: var(--charcoal);
-  color: var(--light);
-}
-
-.view-btn:hover {
-  background-color: #333;
-}
-
-.download-btn {
+.outline-btn:hover {
   background-color: var(--gold);
   color: var(--charcoal);
-}
-
-.download-btn:hover {
-  background-color: #a98a3d;
+  transform: translateY(-2px);
 }
 
 
