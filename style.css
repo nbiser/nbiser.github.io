@@ -235,6 +235,21 @@ h2 {
 .example-card a:hover {
   background: #c9aa52;
 }
+/* --- Scrollable Example Gallery --- */
+#examples .examples-grid {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+}
+
+#examples .example-card {
+  flex: 0 0 280px;
+  scroll-snap-align: start;
+  min-height: 180px;
+}
+
 
 
 
