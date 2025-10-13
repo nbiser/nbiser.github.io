@@ -177,9 +177,10 @@ h2 {
 #examples .example-card a:hover {
   background: #c9aa52;
 }
-
+#examples .examples-grid::-webkit-scrollbar {
+  height: 8px;
+}
 /* Scrollbar styling */
-#examples .examples-grid::-webkit-scr
 
 footer {
   background: var(--charcoal);
