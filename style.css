@@ -66,10 +66,6 @@ h2 {
   padding-bottom: 0.25rem;
 }
 
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
 }
 
 .card {
@@ -101,6 +97,7 @@ h2 {
 }
 
 /* === Scrollable Example Gallery === */
+
 #examples {
   padding: 2rem 1rem;
   max-width: 1000px;
@@ -113,23 +110,15 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
-#examples h3 {
-  color: var(--charcoal);
-  margin-top: 1.5rem;
-  border-bottom: 1px solid var(--gold);
-  padding-bottom: 0.3rem;
-}
-
-/* Scrollable flex container */
 #examples .examples-grid {
   display: flex;
   gap: 1rem;
   overflow-x: auto;
   padding-bottom: 1rem;
   scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* smoother on iOS */
 }
 
-/* Card styling */
 #examples .example-card {
   flex: 0 0 280px;
   scroll-snap-align: start;
@@ -150,45 +139,8 @@ h2 {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-#examples .example-card h4 {
-  margin-top: 0;
-  color: var(--gold);
-  font-size: 1.1rem;
-}
+#examples .examples-grid::-webkit-scrollbar { height: 8px; }
 
-#examples .example-card p {
-  flex-grow: 1;
-  margin-bottom: 0.8rem;
-}
-
-#examples .example-card a {
-  text-decoration: none;
-  color: var(--charcoal);
-  font-weight: bold;
-  display: inline-block;
-  text-align: center;
-  padding: 0.5rem 0.8rem;
-  background: var(--gold);
-  color: #fff;
-  border-radius: 6px;
-  transition: background 0.2s ease;
-}
-
-#examples .example-card a:hover {
-  background: #c9aa52;
-}
-#examples .examples-grid::-webkit-scrollbar {
-  height: 8px;
-}
-/* Scrollbar styling */
-
-footer {
-  background: var(--charcoal);
-  color: var(--gold);
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-}
 
 
 <!--Certification Section Styling -->
