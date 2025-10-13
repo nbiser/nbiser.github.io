@@ -66,41 +66,52 @@ h2 {
   padding-bottom: 0.25rem;
 }
 
-}
-
-.projects {
+/* container */
+.projects{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* responsive columns */
   gap: 1.5rem;
+  max-width: 1100px;       /* optional: keep it from stretching edge-to-edge */
+  margin: 0 auto;          /* center the grid */
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
-.card {
+/* cards */
+.card{
   background: #fff;
   border: 1px solid #ddd;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;           /* make heights more consistent */
+  flex-direction: column;
+  min-height: 180px;       /* optional: feels more uniform */
 }
 
-.card h3 {
-  color: var(--gold);
-}
+/* spacing inside cards */
+.card h3{ color: var(--gold); margin: 0 0 .4rem; }
+.card p{ margin: 0 0 .8rem; }
 
-.card a {
+/* button-ish link */
+.card a{
+  align-self: start;
   display: inline-block;
-  margin-top: 0.5rem;
+  margin-top: auto;        /* pushes link to the bottom for equal-looking cards */
   color: var(--charcoal);
   text-decoration: none;
   border: 1px solid var(--gold);
-  padding: 0.3rem 0.6rem;
+  padding: 0.4rem 0.7rem;
   border-radius: 4px;
-  transition: 0.3s;
+  transition: 0.2s;
+}
+.card a:hover{ background: var(--gold); color:#fff; }
+
+/* optional: force fixed columns on wide screens */
+@media (min-width: 1024px){
+  .projects{ grid-template-columns: repeat(3, 1fr); } /* 3-up grid on desktop */
 }
 
-.card a:hover {
-  background: var(--gold);
-  color: #fff;
-}
 
 /* === Scrollable Example Gallery === */
 
@@ -108,6 +119,7 @@ h2 {
   padding: 2rem 1rem;
   max-width: 1000px;
   margin: 0 auto;
+  
 }
 
 #examples h2 {
