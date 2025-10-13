@@ -100,6 +100,65 @@ h2 {
   color: #fff;
 }
 
+/* === Example Cards Section === */
+#examples {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#examples h2 {
+  text-align: center;
+  color: var(--gold);
+  margin-bottom: 1.5rem;
+}
+
+#examples h3 {
+  color: var(--charcoal);
+  margin-top: 1.5rem;
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 0.3rem;
+}
+
+.examples-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.example-card {
+  background: #fff;
+  border: 2px solid var(--gold);
+  border-radius: 10px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.example-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.example-card h4 {
+  margin-top: 0;
+  color: var(--gold);
+}
+
+.example-card a {
+  text-decoration: none;
+  color: var(--charcoal);
+  font-weight: bold;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.example-card a:hover {
+  color: var(--gold);
+}
+
+
 footer {
   background: var(--charcoal);
   color: var(--gold);
