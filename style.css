@@ -148,7 +148,7 @@ h2 {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   display: flex;
-  flex-direction: grid;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -160,10 +160,7 @@ h2 {
 #examples .examples-grid::-webkit-scrollbar { height: 8px; }
 
 
-<!--Certification Section Styling -->
-
-  /* Scope to #certs to avoid conflicts */
-  #certs { --gold: var(--gold, #b9994d); --fg: var(--charcoal, #0d0e0a); --bg: var(--light, #f4f4f4); }
+/* === Certification Section Styling === */
   .certs-section { margin: 2rem 0; }
   .certs-title { margin: 0 0 .25rem 0; font-size: clamp(1.1rem, 1vw + 1rem, 1.6rem); }
   .certs-sub { margin: 0 0 .75rem 0; color: #777; font-size: .95rem; }
@@ -316,11 +313,4 @@ footer {
 #other-accomplishments .details ul { margin-left:1rem; }
 #other-accomplishments .cta a { margin-right: .75rem; text-decoration: none; font-weight:600; }
 */
-
-
-
-=======
-
->>>>>>> Stashed changes
-
 

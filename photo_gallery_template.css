@@ -3,6 +3,8 @@
   --gold: #b9994d;
   --charcoal: #0d0e0a;
   --light: #f4f4f4;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
